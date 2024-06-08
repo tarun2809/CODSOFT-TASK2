@@ -110,7 +110,7 @@ class SC_Calculator():
     def Fact(self):
         try:
             self.result = False
-            self.current = math.factorial(float(ent_field.get()))
+            self.current = math.factorial(int(ent_field.get()))
             self.Entry(self.current)
         except ValueError:
             self.Entry('Error')
